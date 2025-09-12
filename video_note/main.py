@@ -126,6 +126,11 @@ class VideoNoteWindow(QMainWindow):
             self.drag_position = event.globalPosition().toPoint() - self.frameGeometry().topLeft()
             event.accept()
 
+    def mouseMoveEvent(self, event: QMouseEvent) -> None:
+        if event.buttons() == Qt.MouseButton.LeftButton and not self.drag_position.isNull():
+            self.move(event.globalPosition().toPoint() - self.drag_position)
+            event.accept()
+
     def keyPressEvent(self, event: QKeyEvent) -> None:
         # Handle keyboard shortcuts
         # We're not handling any keys here, letting the menu shortcuts handle everything
