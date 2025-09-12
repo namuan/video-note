@@ -3,7 +3,8 @@
 __pycache__/
 
 # unignore folders
-!devboost/
+# Ignore video_note directory except for the directory itself
+!video_note/
 !assets/
 !prompts/
 !tests/

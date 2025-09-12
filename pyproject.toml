@@ -1,10 +1,10 @@
 [project]
-name = "devboost"
+name = "video-note"
 version = "0.0.1"
-description = "Tools to boost developer productivity and improve workflows"
+description = "A video annotation tool for taking notes on video content"
 authors = [{ name = "Namuan", email = "namuan@deskriders.dev" }]
 readme = "README.md"
-keywords = ['python']
+keywords = ['python', 'video', 'notes', 'annotation']
 requires-python = ">=3.11,<4.0"
 classifiers = [
     "Intended Audience :: Developers",
@@ -19,7 +19,7 @@ dependencies = [
     "faker",
     "jsonpath-ng",
     "markdown",
-    "pyqt6",
+    "PyQt6",
     "pyyaml",
     "appdirs",
     "Pillow",
@@ -27,9 +27,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://namuan.github.io/dev-boost/"
-Repository = "https://github.com/namuan/dev-boost"
-Documentation = "https://namuan.github.io/dev-boost/"
+Homepage = "https://namuan.github.io/video-note/"
+Repository = "https://github.com/namuan/video-note"
+Documentation = "https://namuan.github.io/video-note/"
 
 [tool.uv]
 dev-dependencies = [
@@ -46,7 +46,7 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["devboost"]
+packages = ["video_note"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -58,45 +58,7 @@ fix = true
 
 [tool.ruff.lint]
 select = [
-    # flake8-2020
-    "YTT",
-    # flake8-bandit
-    "S",
-    # flake8-bugbear
-    "B",
-    # flake8-builtins
-    "A",
-    "G",
-    # flake8-comprehensions
-    "C4",
-    # flake8-debugger
-    "T10",
-    # flake8-simplify
-    "SIM",
-    # isort
-    "I",
-    # mccabe
-    "C90",
-    # pycodestyle
-    "E", "W",
-    # pyflakes
-    "F",
-    # pygrep-hooks
-    "PGH",
-    # pyupgrade
-    "UP",
-    # ruff
-    "RUF",
-    # tryceratops
-    "TRY",
-    # Use pathlib instead of os.path
-    "PTH",
-    # Use common import conventions
-    "ICN",
-    # Good return practices
-    "RET",
-    # Some good import practices
-    "TID",
+    "ALL"
 ]
 ignore = [
     # LineTooLong
@@ -107,6 +69,8 @@ ignore = [
     "TRY300",
     "TRY301",
     "E741",
+    "D",
+    "N802",
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -116,4 +80,4 @@ ignore = [
 preview = true
 
 [project.scripts]
-devboost = "devboost:main"
+video-note = "video_note.main:main"

@@ -32,7 +32,7 @@ test-single: ## Run a single test file (usage: make test-single TEST=test_config
 
 run: ## Run the application
 	@echo "🚀 Testing code: Running $(PROJECTNAME)"
-	@uv run devboost
+	@uv run video-note
 
 clean: ## Clean build artifacts
 	@echo "🚀 Removing build artifacts"
@@ -48,7 +48,7 @@ package: clean ## Run installer
 	@uv run pyinstaller main.spec --clean
 
 install-macosx: package ## Installs application in users Application folder
-	./scripts/install-macosx.sh DevBoost.app
+	./scripts/install-macosx.sh VideoNote.app
 
 setup: ## One command setup
 	@make install-macosx
