@@ -1,0 +1,27 @@
+# ignore all root items
+/*
+__pycache__/
+
+# unignore folders
+!devboost/
+!assets/
+!prompts/
+!tests/
+!docs/
+!.trae/
+!scripts/
+
+# unignore files
+!.gitignore
+!README.md
+!pyproject.toml
+!uv.lock
+!Makefile
+!.pre-commit-config.yaml
+!.editorconfig
+!LICENSE
+!tox.ini
+!main.spec
+!main_cli.py
+!QWEN.md
+!install.command
