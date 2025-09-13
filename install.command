@@ -30,4 +30,7 @@ log "Changed to script directory: $(pwd)"
 make setup
 
 log "✅ Installation complete! The application is now in ~/Applications."
+
+open ~/Applications
+
 log "✅ You can close this terminal window."

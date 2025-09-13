@@ -11,12 +11,6 @@ Video Note is a powerful video annotation tool designed for taking notes while w
 - **Video Playback**: Open and play local video files in various formats (MP4, AVI, MOV, MKV, etc.)
 - **Fullscreen Viewing**: Watch videos in fullscreen mode for an immersive experience
 - **Playback Controls**: Play/pause videos using intuitive buttons or keyboard shortcuts
-- **Timestamp Annotations**: Automatically capture video timestamps when creating notes (coming soon)
-- **Rich Text Editing**: Format your notes with various text styles and formatting options (coming soon)
-- **Tagging System**: Organize your annotations with custom tags for easy searching (coming soon)
-- **Export Options**: Export your notes in multiple formats (PDF, Markdown, Text) (coming soon)
-- **Search Functionality**: Quickly find specific annotations using keywords or tags (coming soon)
-- **Customizable Interface**: Adjust the layout to suit your note-taking preferences (coming soon)
 
 ## Installation
 
@@ -36,22 +30,11 @@ Video Note requires Python 3.11+, PyQt6, and FFmpeg for video playback.
    cd video-note
    ```
 
-2. Install dependencies:
+2. Setup / Installation
 
-   ```
-   make install
-   ```
+Run `install.command` from Finder or Terminal.
 
-3. Run the application:
-
-   ```
-   make run
-   ```
-
-4. Install as an application (macOS only)
-   ```
-   make install-macosx
-   ```
+The Application will be copied in `~/Applications` folder.
 
 ### Menu Options
 

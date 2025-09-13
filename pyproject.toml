@@ -16,14 +16,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "faker",
-    "jsonpath-ng",
-    "markdown",
     "PyQt6",
-    "pyyaml",
-    "appdirs",
-    "Pillow",
-    "requests",
 ]
 
 [project.urls]
@@ -38,7 +31,6 @@ dev-dependencies = [
     "tox-uv",
     "ruff",
     "pyinstaller",
-    "vulture",
 ]
 
 [build-system]
